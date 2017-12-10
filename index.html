@@ -11,11 +11,11 @@
     <form id="form">
         <fieldset>
         <label for="nameValue">Enter name:</label><br>
-        <input type="text" name="name" placeholder="Name..." required autofocus><br>
+        <input type="text" name="name" id="nameValue" placeholder="Name..." required autofocus><br>
         <label for="timeValue">Enter time:</label><br>
-        <input type="time" name="time" placeholder="Time..." required><br>
+        <input type="time" name="time" id="timeValue" placeholder="Time..." required><br>
         <label for="placeValue">Enter place:</label><br>
-        <input type=" text" name="place" placeholder="Place..." required><br>
+        <input type=" text" name="place" id="placeValue" placeholder="Place..." required><br>
         <br>
         <input type="button" value="Confirm" onclick="valid(document.getElementById('form'))">
         <input type="button" value="Converter" onclick="convert()">
