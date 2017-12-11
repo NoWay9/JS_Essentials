@@ -22,5 +22,7 @@ dollarRate: 27.005
 result= euro * moneyRate.euroRate;
 result2=dollar * moneyRate.dollarRate;
 result3= moneyRate.euroRate/moneyRate.dollarRate;
+if(euro != 0 && dollar != 0)
 alert(euro + ' euros are equal ' + result.toFixed(2) + ' grns, ' + dollar + ' dollars are equal ' + result2.toFixed(2) + ', one euro is equal ' + result3.toFixed(3) + ' dollars');
+else alert('Value can`t be 0. Enter different value.');
 }
