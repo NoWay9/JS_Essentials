@@ -16,7 +16,11 @@ else alert('Enter time in format hh:mm');
 function validTime(time){
     if (time.length != 5)return false;
         var RegExp = /[0-2][0-9]:[0-5][0-9]/;
-      if(RegExp.test(time))return true;
+      if(RegExp.test(time)){
+        if(time.slice(0, 2) < 24)  
+        return true;
+        else return false
+    }
       else return false; 
 }
 }
