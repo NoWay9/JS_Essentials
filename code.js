@@ -33,12 +33,12 @@ euroRate: 31.789,
 dollarRate: 27.005
 };
 euro = prompt('Enter value euro:', '100');
-if(isNaN(euro) || euro <= 0){
+if(isNaN(euro) || euro <= 0 || euro.indexOf('e') != -1){
 alert('Please, enter correct number.');
 return;
 }
 dollar = prompt('Enter value dollar', '100');
-if(isNaN(dollar) || dollar <= 0){
+if(isNaN(dollar) || dollar <= 0 || dollar.indexOf('e') != -1){
 alert('Please, enter correct number.');
 return;
 }
